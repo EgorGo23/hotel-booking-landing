@@ -1,0 +1,234 @@
+@import './reset.scss';
+
+body {
+    background-color: #F5FAFE;
+}
+
+.header {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    color: #333333;
+
+    .nav-top {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 180px;
+    
+        .nav-top__left-section {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 13px;
+            width: 243px;
+            height: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .question {
+                font-weight: 700;
+            }
+    
+            .call-us {
+                font-weight: 400;
+            }
+        }
+    
+        .nav-top__right-section {
+            display: flex;
+    
+            .gift-card {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 13px;
+                width: 102px;
+                height: 18px;
+                margin-right: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        
+            .loyality-program {
+                font-weight: normal;
+                width: 115px;
+                height: 18px;
+                font-size: 10px;
+                line-height: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+    .navbar {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        padding: 0 180px;
+        background: #fff;
+
+        .navbar__title {
+            position: absolute;
+            left: 180px;
+            width: 177px;
+            height: 24px;
+            font-family: Luckiest Guy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+
+            .title__tour {
+                color: #EC1F46;
+            }
+        }
+
+        .navbar__search-bar {
+            width: 350px;
+            height: 40px;
+            position: absolute;
+            left: 450px;
+
+            .search-bar__form {
+                display: flex;
+                align-items: center;
+                .form__find-bar {
+                    width: 350px;
+                    height: 40px;
+                    background: #F5FAFE;
+                    border-radius: 6px 0 0 6px;    
+                    border: none;         
+                    padding: 12px 0 13px 23px;
+
+                    &::placeholder {
+                        font-family: Muli;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 15px;
+                        width: 89px;
+                        height: 15px;
+                        position: relative;
+                        top: -2px;
+                    }
+                }
+                .form__find-btn {
+                    width: 65px;
+                    height: 40px;
+                    background: #EC1F46;
+                    border-radius: 0px 6px 6px 0px;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+        }
+
+        .navbar__cart {
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            right: 450px;
+
+            .cart__shopping-cart {
+                width: 24px;
+                height: 24px;
+                position: relative;
+                top: 10px;
+            }
+
+            .cart__group {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                color: #fff;
+                background: #EC1F46;  
+                text-align: center;
+                position: relative;
+                top: -24px;
+                left: 12px;
+
+                .group__count {
+                    width: 6px;
+                    height: 13px;  
+                    position: relative;
+                    top: -3px;
+                    font-family: Muli;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 13px;
+                }
+            }
+        }
+
+        .navbar__profile {
+            width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            right: 180px;
+
+            .profile__photo {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: url('img/profile-photo.jpeg');
+                background-position: center;
+                background-size: 161% 103%;
+                background-position: 70%;
+            }
+
+            .profile__name {
+                & > span {
+                    width: 49px;
+                    height: 18px;
+                    font-family: Muli;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #333333;
+                }
+            }
+
+            .profile__arrow {
+                margin-top: 1px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .nav-bottom {
+        background: #0A223D;
+        height: 80px;
+        padding: 0 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nav-bottom__btn {
+            border: none;
+            outline: none;
+            font-family: Muli;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: none;
+            width: 77px;
+            height: 18px;
+        }
+    }
+}
