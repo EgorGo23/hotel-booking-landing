@@ -74,8 +74,6 @@ body {
         background: #fff;
 
         .navbar__title {
-            position: absolute;
-            left: 180px;
             width: 177px;
             height: 24px;
             font-family: Luckiest Guy;
@@ -90,14 +88,17 @@ body {
         }
 
         .navbar__search-bar {
-            width: 350px;
+            width: 460px;
             height: 40px;
-            position: absolute;
-            left: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
 
             .search-bar__form {
                 display: flex;
                 align-items: center;
+                width: 350px;
+
                 .form__find-bar {
                     width: 350px;
                     height: 40px;
@@ -130,46 +131,8 @@ body {
 
         }
 
-        .navbar__cart {
-            width: 34px;
-            height: 34px;
-            position: absolute;
-            right: 450px;
-
-            .cart__shopping-cart {
-                width: 24px;
-                height: 24px;
-                position: relative;
-                top: 10px;
-            }
-
-            .cart__group {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                color: #fff;
-                background: #EC1F46;  
-                text-align: center;
-                position: relative;
-                top: -24px;
-                left: 12px;
-
-                .group__count {
-                    width: 6px;
-                    height: 13px;  
-                    position: relative;
-                    top: -3px;
-                    font-family: Muli;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 13px;
-                }
-            }
-        }
-
         .navbar__profile {
-            width: 150px;
+            width: 250px;
             height: 40px;
             display: flex;
             align-items: center;
@@ -177,34 +140,82 @@ body {
             position: absolute;
             right: 180px;
 
-            .profile__photo {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: url('img/profile-photo.jpeg');
-                background-position: center;
-                background-size: 161% 103%;
-                background-position: 70%;
-            }
-
-            .profile__name {
-                & > span {
-                    width: 49px;
-                    height: 18px;
-                    font-family: Muli;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #333333;
+            .profile__cart {
+                width: 34px;
+                height: 34px;    
+                
+                .cart__shopping-cart {
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    top: 10px;
+                }
+    
+                .cart__group {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    color: #fff;
+                    background: #EC1F46;  
+                    text-align: center;
+                    position: relative;
+                    top: -24px;
+                    left: 12px;
+    
+                    .group__count {
+                        width: 6px;
+                        height: 13px;  
+                        position: relative;
+                        top: -3px;
+                        font-family: Muli;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 13px;
+                    }
                 }
             }
 
-            .profile__arrow {
-                margin-top: 1px;
-                width: 24px;
-                height: 24px;
+            .profile__info {
+                width: 150px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .info__photo {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: url('img/profile-photo.jpeg');
+                    background-position: center;
+                    background-size: 161% 103%;
+                    background-position: 70%;
+                }
+    
+                .info__name {
+                    & > span {
+                        width: 49px;
+                        height: 18px;
+                        font-family: Muli;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #333333;
+                    }
+                }
+    
+                .info__arrow {
+                    margin-top: 1px;
+                    width: 24px;
+                    height: 24px;
+                }
             }
+        }
+
+        @media screen and (max-width: 1250px) {
+            
         }
     }
 
