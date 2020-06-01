@@ -586,4 +586,154 @@ main {
             flex-flow: column;
         }
     }
+
+    .hotel-info {
+    
+        .hotel-info__slider {
+            width: 728px;
+            height: 450px;
+            background-image: url('hotel-img.png');
+            position: relative;
+            background-size: 100%;
+            border-radius: 8px;
+        
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: transparent;
+                background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+                border-radius: 8px;
+            }
+
+            .slider__arrow {
+                border: none;
+                background: none;
+                position: absolute;
+                cursor: pointer;
+                padding: 0;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .arrow_left {
+                left: 16px;
+            }
+
+            .arrow_right { 
+                right: 18px;
+            }
+        }
+
+        .hotel-info__booking {
+            font-family: Nunito;
+            font-style: normal;
+            width: 350px;
+            height: 210px;
+            background: #0A223D;
+            border-radius: 8px;
+            position: relative;
+            padding: 26px 29px 26px 26px;
+
+            .booking__price {
+                width: 86px;
+                height: 59px;
+                font-weight: normal;
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+
+                .price__price-starts-as {
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                }
+
+                .price__text {
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 33px;
+
+                    color: #FFFFFF;
+                }
+                
+                .price__per-room {
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    color: #FFFFFF;
+                }
+            }
+            
+            .booking__person-room {
+                width: 80px;
+                height: 40px;
+                position: absolute;
+                top: 26px;
+                right: 29px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .person-room__group {
+                    width: 100%;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .booking__call-center {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .call-center__text {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                }
+
+                .call-center__call {
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+
+                    & > span {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            
+            .booking__btn {
+                width: 295px;
+                height: 45px;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                background: #EC1F46;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #FFFFFF;
+                position: absolute;
+                bottom: 26px;
+            }
+        }
+    }
 }
